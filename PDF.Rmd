@@ -1,0 +1,39 @@
+---
+title: "R Notebook"
+output:
+  pdf_document: default
+  html_notebook: default
+  html_document: default
+---
+
+**Principles of Data Visualization and Introduction to ggplot2**
+
+I have provided you with data about the 5,000 fastest growing companies in the US, as compiled by Inc. magazine. lets read this in:
+
+```{r}
+inc <- read.csv("https://raw.githubusercontent.com/charleyferrari/CUNY_DATA_608/master/module1/Data/inc5000_data.csv", header= TRUE)
+```
+
+And lets preview this data:
+
+```{r}
+head(inc)
+```
+```{r}
+summary(inc)
+```
+
+Think a bit on what these summaries mean. Use the space below to add some more relevant non-visual exploratory information you think helps you understand this data:
+
+```{r}
+# Insert your code here, create more chunks as necessary
+
+# Maximum Growth Rate
+(Growth <- inc[which.max(inc$Growth_Rate),])
+
+# Maximum Revenue
+(Revenue <- inc[which.max(inc$Revenue),])
+
+# Maximum Employees
+(Employees <- inc[which.max(inc$Employees),])
+```
