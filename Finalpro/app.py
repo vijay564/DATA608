@@ -4,7 +4,8 @@ import dash_html_components as html
 import dash_core_components as dcc
 from assets import pat_dem, pat_med, pat_readmit
 import pandas as pd
-#import plotly.graph_objs as go
+import scipy as sc
+import plotly.graph_objs as go
 import plotly.figure_factory as ff
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
